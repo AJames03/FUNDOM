@@ -38,23 +38,50 @@
 
     <!-- Login Form -->
      <div class="loginFrame">
+        <ion-icon name="close-outline" id="close-BTN"></ion-icon>
         <div class="loginContainer">
-            <ion-icon name="close-outline" id="close-BTN"></ion-icon>
             <label id="loginAcc">Login Your Account</label>
             <form action="#" method="post" id="loginForm">
                 <div id="inputInfo">
                     <ion-icon name="mail-outline"></ion-icon>
-                    <input type="text" name="email" placeholder="Email" id="inputTXT">
+                    <input type="text" name="email" placeholder="Email" id="logEmail">
                 </div>
                 <div id="inputInfo">
                     <ion-icon name="lock-closed-outline"></ion-icon>
-                    <input type="password" name="password" placeholder="Password" id="inputTXT">
+                    <input type="password" name="password" placeholder="Password" id="logPass">
                 </div>
-                <input type="submit" value="Log In" id="btnSub">
+                <input type="submit" value="Log In" id="btnLog">
             </form>
             <label id="registerAcc">
                 Don't have an account?
-                <a href="/register.html" id="register">Register</a>
+                <button type="button" id="register">Register</button>
+            </label>
+        </div>
+        
+        <div class="regContainer">
+            <label id="regAcc">Create Account</label>
+            <form action="#" method="post" id="signUpForm">
+                <div id="inputInfo1">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" name="registerUser" placeholder="Username" id="regUser" required>
+                </div>
+                <div id="inputInfo1">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="text" name="registerEmail" placeholder="Email" id="regEmail" required>
+                </div>
+                <div id="inputInfo1">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" name="regPSW" placeholder="Password" id="regPass" required>
+                </div>
+                <div id="inputInfo1">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" name="regCPSW" placeholder="Confirm Password" id="regCPass" required>
+                </div>
+                <input type="submit" value="Sign-up" id="btnSignUp">
+            </form>
+            <label id="registerAcc">
+                Already have an account?
+                <button type="button" id="login">Login</button>
             </label>
         </div>
      </div>

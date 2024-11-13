@@ -62,6 +62,7 @@ body{
         padding: 10px;
         letter-spacing: 3px;
         width: 150px;
+        border: none;
     }
     /* For computer image */
     #computer{
@@ -120,11 +121,11 @@ body{
         border-radius: 50px;
     }
     #close-BTN{
-        position: absolute;
+        position: fixed;
         top: 8%;
         right: 25%;
         font-size: 50px;
-
+        z-index: 2;
     }
     #loginAcc{
         font-family: 'Roboto', sans-serif;
@@ -149,7 +150,7 @@ body{
         width: 30vw;
         border-radius: 50px;
     }
-    #inputTXT{
+    #logEmail, #logPass,#regUser, #regEmail, #regPass, #regCPass{
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         padding: 10px;
@@ -158,7 +159,7 @@ body{
         width: 100%;
         background-color: rgba(0, 0, 0, 0);
     }
-    #btnSub{
+    #btnLog, #btnSignUp{
         background-color: #FFB703;
         color: #0D4A88;
         font-family: 'Roboto', sans-serif;
@@ -179,8 +180,49 @@ body{
         color: black;
         letter-spacing: 2px;
     }
-    #register{
+    #register, #login{
         color: #0B4B88;
         text-decoration: none;
+        outline: none;
+        background: none;
+        border: none;
+    }
+
+    /* Registration Form */
+    .regContainer{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding: 90px;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+        height: 400px;
+        background-color: white;
+        border-radius: 50px;
+    }
+    #inputInfo1{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        background-color: #E1D3D2;
+        align-items: center;
+        width: 30vw;
+        border-radius: 10px;
+    }
+    #regAcc{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 5px;
+        padding-bottom: 10px;
+    }
+    #signUpForm{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
   }
